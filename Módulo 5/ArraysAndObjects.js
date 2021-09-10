@@ -63,7 +63,7 @@ function BankAccount(clientName, accountNumber, clientLastname) {
 
 let myAccount = new BankAccount('Dena', 00001, 'Krzyny');
 let sisterAccount = new BankAccount('Vani', 00002, 'Krzyny');
-let brotherAccount = new BankAccount('Juanjo', 0002, 'Krzyny');
+let brotherAccount = new BankAccount('Juanjo', 0003, 'Krzyny');
 
 console.log(myAccount.showAccount());
 console.log(myAccount.debitMoney(300));
