@@ -43,7 +43,7 @@ function BankAccount(clientName, accountNumber, clientLastname) {
     this.showBalance = () => `${'El saldo actual de tu cuenta es de $'} ${this.balance}`;
     this.showTransactions = () => {
         const beautyArray = this.transactions.join('\r\n');
-        return `${'Los movimientos al día de la fecha fueron:'} \n ${beautyArray}`;
+        return `${'Los movimientos al día de la fecha fueron:'} \r ${beautyArray}`;
     }
 
 
