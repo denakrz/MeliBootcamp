@@ -30,15 +30,15 @@ computers.push(new Computer('4gb', 'Intel I3', '256gb', false))
 function showAllStock(computers) {
     if (computers) {
         let computerLength = computers.length
-        console.log (`${'El stock actual de computadoras es de:'}${computerLength}`);
+        console.log (`${'El stock actual de computadoras es de: '}${computerLength}`);
     } else {
         console.log('No tenemos stock de computadoras.');
     }
 }
 
 function showComputerModel(computers) {
-    const beautifyArray = computers.join('\r\n');
-    console.log (`${'Contamos con los siguientes modelos:'} \r ${beautifyArray}`)
+    console.log ('Contamos con los siguientes modelos:')
+    console.log(computers);
 }
 
 // Ejercicio 6:
@@ -47,7 +47,12 @@ function showComputerModel(computers) {
 
 function showAllComputersWithGPU(computers) {
     let computersWithGPU = computers.filter(pc => pc.gpu);
-    let gpuBeautifyArray = computersWithGPU.join('\r\n');
-    console.log(`${'Las computadoras que tienen GPU son:'}${gpuBeautifyArray}`);
+    console.log('Las computadoras que tienen GPU son:')
+    console.log(computersWithGPU);
     ;
 };
+
+showAllStock(computers);
+showComputerModel(computers);
+showAllComputersWithGPU(computers);
+
